@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhijith S. Rao - Personal Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto 20px;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .experience,
+        .education,
+        .contact {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1.5rem;
+        }
+
+        .experience h2,
+        .education h2,
+        .contact h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .contact ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .contact ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact ul li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            animation: fadeIn 0.8s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="animated">Abhijith S. Rao</h1>
+        <p class="animated">Software Engineer & Product Management Enthusiast</p>
+    </header>
+
+    <div class="container animated">
+        <section class="intro">
+            <h2>About Me</h2>
+            <p>Software engineer with a passion for translating technical expertise into strategic product solutions. Adept at Agile methodologies and Software Development Lifecycle, I bring a deep understanding of technology and a user-centric mindset to drive product success. Eager to leverage my technical background in a dynamic product management role.</p>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <p>Include your relevant professional experience here.</p>
+            <p>You can add bullet points or paragraphs describing your roles, projects, and achievements.</p>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p>Include your educational background here.</p>
+            <p>Specify your degrees, institutions, and any notable academic achievements.</p>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <ul>
+                <li>Email: your.email@example.com</li>
+                <li>Phone: +1234567890</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">Your LinkedIn Profile</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Trigger animation when page is loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            const animatedElements = document.querySelectorAll('.animated');
+            animatedElements.forEach(function (element) {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(-20px)';
+                setTimeout(function () {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }, 300);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
